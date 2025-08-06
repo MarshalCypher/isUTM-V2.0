@@ -11,7 +11,7 @@ void  third_page_two_ui(U8G2_ST7920_128X64_F_SW_SPI u8g2, int address, int value
   u8g2.setCursor(3, 34);
   u8g2.print("HOLD 1 DOWN FOR TESTING");
   u8g2.setCursor(3, 45);
-  u8g2.print("HOLD 2 FOR CALIBERATON");
+  u8g2.print("HOLD 2 FOR CALIBRATON");
   EEPROM.put(address, value_to_store_at_address);
   EEPROM.commit();
   EEPROM.get(address, value_to_store_at_address);
